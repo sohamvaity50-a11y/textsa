@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Feature-rich Text Saver</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-mode">
+  <nav>
+    <div class="nav-left">TextSaver</div>
+    <ul class="nav-links">
+      <li><a href="#" id="home-link">Home</a></li>
+      <li><a href="#" id="save-link">Save Text</a></li>
+      <li><a href="#" id="entries-link">Saved Entries</a></li>
+      <li><a href="#" id="about-link">About</a></li>
+    </ul>
+    <button id="theme-toggle" title="Switch theme">🌙</button>
+  </nav>
+
+  <main id="main-content">
+    <!-- Home Section -->
+    <section id="home-section">
+      <h1>Welcome to TextSaver!</h1>
+      <p>Save, manage, and organize your text notes easily—complete with dark mode, copy and more!</p>
+    </section>
+    
+    <!-- Text Saver Section -->
+    <section id="save-section" style="display:none;">
+      <h2>Save Your Text</h2>
+      <textarea id="input-text" placeholder="Type or paste your note here..." rows="5"></textarea>
+      <br />
+      <button id="save-btn">Save</button>
+      <span id="save-confirm"></span>
+    </section>
+    
+    <!-- Entries Section -->
+    <section id="entries-section" style="display:none;">
+      <h2>Saved Notes</h2>
+      <ul id="entries-list"></ul>
+    </section>
+    
+    <!-- About Section (Modal) -->
+    <div id="about-modal" class="modal" style="display:none;">
+      <div class="modal-content">
+        <span class="close-btn" id="close-modal">&times;</span>
+        <h2>About TextSaver</h2>
+        <p>This feature-rich static website allows you to save and manage notes, toggle dark mode, and more. Built with HTML, CSS, and Java.</p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
